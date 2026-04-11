@@ -1,7 +1,7 @@
 package com.csms.controller;
 
 import com.csms.entities.Language;
-import com.csms.entities.ServiceE;
+import com.csms.entities.ServiceRecord;
 import com.csms.repository.LanguageRepository;
 import com.csms.repository.ServiceRepository;
 import com.csms.service.CustomerService;
@@ -38,7 +38,7 @@ public class CustomerController {
     }
 
     @GetMapping("/intent/{intention}")
-    public List<ServiceE> postPurpose(@PathVariable String intention){
+    public List<ServiceRecord> postPurpose(@PathVariable String intention){
         return customerService.getMatchedServices(intention);
     }
 

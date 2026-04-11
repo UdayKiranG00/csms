@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ServiceE {
+public class ServiceRecord {
     @Id
     @Description("The unique service_id for each service")
     private int service_id;

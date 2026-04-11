@@ -1,6 +1,6 @@
 package com.csms.llm;
 
-import com.csms.entities.ServiceE;
+import com.csms.entities.ServiceRecord;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.chat.request.ResponseFormat;
 import dev.langchain4j.model.chat.request.ResponseFormatType;
@@ -39,7 +39,7 @@ public class LLMService {
         return llmUtils.translate(msg,language);
     }
 
-    public List<ServiceE> getMatchedServices(String services,String intent,String language){
+    public List<ServiceRecord> getMatchedServices(String services, String intent, String language){
         return llmUtils.getMatchedServices(services,intent,language).getServices();
     }
 

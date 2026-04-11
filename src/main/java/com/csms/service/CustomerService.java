@@ -1,6 +1,6 @@
 package com.csms.service;
 
-import com.csms.entities.ServiceE;
+import com.csms.entities.ServiceRecord;
 import com.csms.entities.Token;
 import com.csms.llm.LLMService;
 import com.csms.repository.ServiceRepository;
@@ -37,8 +37,8 @@ public class CustomerService {
         System.out.println(language);
         return llmService.getWelcomeMsg(language);
     }
-    public List<ServiceE> getMatchedServices(String intention){
-        List<ServiceE> allServices = serviceRepository.findAll();
+    public List<ServiceRecord> getMatchedServices(String intention){
+        List<ServiceRecord> allServices = serviceRepository.findAll();
 
         ObjectMapper mapper = new ObjectMapper();
         String jsonString = mapper.writeValueAsString(allServices);
