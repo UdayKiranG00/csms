@@ -3,5 +3,5 @@ A customer scheduling management designed to help the customers to schedule them
 
 ## UML DIAGRAM
 <div>
-  <img src="uml_diagram.png" alt="uml_diagram_png"/>
+  <img src="uml_diagramj.jpg" alt="uml_diagram_png"/>
 </div>
