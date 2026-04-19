@@ -27,7 +27,7 @@ public class LLMService {
                 .build();
 
         chatLanguageModel = GoogleAiGeminiChatModel.builder()
-                .modelName("gemini-2.5-flash")
+                .modelName("google/gemma-4-31b-it")
                 .apiKey(apiKey)
                 .responseFormat(jsonFormat)
                 .build();
